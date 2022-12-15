@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>map</title>
+    <script src="jquery-3.6.1.js"></script>
+    <script
+      src="https://code.jquery.com/color/jquery.color-2.2.0.js"
+      integrity="sha256-gvMJWDHjgDrVSiN6eBI9h7dRfQmsTTsGU/eTT8vpzNg="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styleCss/map.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <span class="material-symbols-outlined" id ="menuIcon">menu</span>
+    <span class="material-symbols-outlined" id ="homeIcon-small"onclick="location.href='index.html'">agriculture</span>
+    <span class="material-symbols-outlined" id="log" onclick="location.href='login.html'">login</span>
+  </head>
+  <body>
+
+
+<!-- linkmenu -->
+<aside>
+    <div id="menuHidden">
+      <ul>
+          <li><a href="introduce.html">소개</a></li>
+          <li><a href="travel.html">여행</a></li>
+          <li><a href="map.html">로드맵</a></li>
+          <li><a href="memberList.html">회원가입목록</a></li>
+      </ul>
+  </div>
+    </aside>
+
+    <script src="js/pop.js"></script>
+
+
+       <!-- map -->
+
+
+
+
+<!-- 
+  title : title
+
+ -->
+      <!-- .wrapper>(.title+p.content>lorem)*5 -->
+
+
+      <div class="wrapper">
+       
+        <div class="title">Basic Fronted Knowledge</div>
+        <p class="content">
+          HTML <br>
+          CSS <br>
+          JAVASCRIPT
+        </p>
+        <div class="title">OS and General Knowledge</div>
+        <p class="content">
+          Terminal Usage<br>
+          How OSs work in General<br>
+          Process Management<br>
+          Threads and Concurrency<br>
+          Basic Terminal Command<br>
+          Memory Management<br>
+          Interprocess Communication<br>
+          I/O Management<br>
+          POSIX Basics<br>
+          Basic Networking Concepts
+        </p>
+        <div class="title">Relational Databases</div>
+        <p class="content">
+          PostgreSQL<br>
+          MySQL<br>
+          MariaDB<br>
+          MS SQL<br>
+          Oracle
+        </p>
+        <div class="title">More about Databases</div>
+        <p class="content">
+          Authentication<br>
+          REST(read Roy Fielding's Paper)<br>
+          JSON API's<br>
+          MS SQL
+        </p>
+      </div>
+
+      <script>
+        $(".title").click((e) => {
+          console.log($(e.target).html());
+          $(e.target).next().slideToggle().siblings(".content").slideUp();
+
+          // .slideDown(150)
+          //   .slideUp(150);
+          //   .slideToggle(150);
+        });
+      </script>
+   
+
+ <!-- footer -->
+ <footer>
+  <ul>
+          <li><a target="_blank" href="https://github.com/awonatwo"><i class="fa fa-github"></i></a></li>
+          <li><a href="mailto:greenfone42@gmail.com"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+      </nav>
+      <div class="copyright">Copyright 2022. awonchoi all rights reserved.</div>
+    </footer>
+  </body>
+  </html>
